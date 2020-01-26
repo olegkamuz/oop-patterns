@@ -1,5 +1,7 @@
 package decorator;
 
+import java.math.BigDecimal;
+
 public class Chalk extends BilliardParts{
     private BilliardParts billiardParts;
 
@@ -11,7 +13,8 @@ public class Chalk extends BilliardParts{
     }
 
     @Override
-    public double cost() {
-        return billiardParts.cost() + .33;
+    public BigDecimal cost() {
+        BigDecimal price = new BigDecimal("0.33");
+        return billiardParts.cost().add(price);
     }
 }

@@ -1,4 +1,6 @@
-package decorator.kata;
+package decorator;
+
+import java.math.BigDecimal;
 
 public class Cue extends BilliardParts{
     private BilliardParts billiardParts;
@@ -9,9 +11,9 @@ public class Cue extends BilliardParts{
     public String getDescription() {
         return billiardParts.getDescription() + "\n - cue";
     }
-
+    BigDecimal price = new BigDecimal("51.93");
     @Override
-    public double cost() {
-        return billiardParts.cost() + 51.93;
+    public BigDecimal cost() {
+        return billiardParts.cost().add(price);
     }
 }
