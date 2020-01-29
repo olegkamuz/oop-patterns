@@ -1,4 +1,4 @@
-package Strategy;
+package strategy;
 
 public abstract class Things {
     Behavior1 behavior1;

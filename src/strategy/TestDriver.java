@@ -1,4 +1,4 @@
-package Strategy;
+package strategy;
 
 public class TestDriver {
     public static void main(String... args) {

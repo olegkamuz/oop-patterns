@@ -1,4 +1,4 @@
-package Strategy;
+package strategy;
 
 public class ConcreteBehavior1OfType2 implements Behavior1{
     @Override

@@ -1,4 +1,4 @@
-package Strategy;
+package strategy;
 
 public class ConcreteBehavior2OfType2 implements Behavior2{
     public void performActionOfBehavior2() {
